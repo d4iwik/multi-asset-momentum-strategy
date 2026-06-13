@@ -6,7 +6,7 @@ This project started as a question: can a rules-based, theory-motivated strategy
 
 ---
 
-## What this strategy does — plain English
+## What this strategy does
 
 This strategy is rooted in a well-documented phenomenon in financial economics: **momentum** — the tendency of assets that have been trending upward to continue doing so over medium-term horizons (3–12 months), and vice versa.
 
@@ -16,7 +16,7 @@ The central question driving the project: *does this edge persist out-of-sample,
 
 ---
 
-## How it works — the mechanics
+## How it works
 
 ### 1. Signal generation
 For each of the 8 assets, momentum is measured across three lookback windows simultaneously — approximately 3 months (63 trading days), 6 months (126 days), and 12 months (252 days). The signal is the sign-average across all three lookbacks: if 2 of 3 lookbacks are positive, the asset receives a positive signal. Blending multiple lookbacks reduces sensitivity to any single window choice and produces a more stable signal with fewer false reversals.
